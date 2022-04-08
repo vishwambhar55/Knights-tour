@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
+    <title>Knight's tour</title>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="nav">
+		<h1>
+			knight-tour
+		</h1>
+	</div>
+
+	<table id="tLayout" cellSpacing="2" cellPadding="3" class="table-mid">
+		<tr>
+			<td valign="top" >
+				<table id="tMain" cellSpacing="0" cellPadding="0" class="chess">        
+				</table>
+			</td>
+			<td valign="top" >
+				<textarea class="text-area" id="txtaMoves" style="width: 400px; height: 250px;" disabled rows="6" cols="10"></textarea>
+			</td>
+		</tr>	
+		<tr>	
+			<td colspan="2" align="center">
+				<input class="bt-x" id="btnClearTheBoard" type="button" value="Clear the chess board." onclick="clearBoard();" />
+				<input  class="bt-x" id="btnFindSolution" type="button" value="Find Solution." onclick="GetSolution ();" />
+			</td>
+		</tr>
+	</table>
+	<script src="js/knight-tour.js" type="text/javascript"></script>
+</body>
+</html>

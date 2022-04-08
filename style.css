@@ -1,0 +1,108 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url("https://www.dropbox.com/s/2ct0i6kc61vp0bh/wall.jpg?raw=1");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #141414;
+}
+.nav{
+    margin-top: -2vh;
+    font-family: "Vibur", cursive;
+    font-size: 2rem;
+    color: #c6e2ff;
+    animation: neon .08s ease-in-out infinite alternate;
+    text-align: center;
+}
+
+.clsBtnLight
+{
+    background-color:white;
+    width:  45px;
+    height: 45px;
+    color: black;
+    border: none;
+    outline: none;
+    font-size: large;
+}
+.clsBtnDark
+{
+    background-color:black; 
+    width:  45px;
+    height: 45px;
+    color: white;
+    border: none;
+    outline: none;
+    font-size: large;
+}
+.chess{
+    height: 25vw;
+    width: 25vw;
+    /* border: 1px solid brown; */
+}
+.table-mid{
+    margin-left: 25vw;
+    margin-top: 5vh;
+    color:#3EDBF0;
+    font-size: larger;
+    text-align: center;
+    font-weight: bolder;
+}
+.bt-x{
+    height: 30px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: #3EDBF0;
+    color: black;
+    font-size: large;
+}
+
+@keyframes neon {
+    from {
+      text-shadow:
+      0 0 6px rgba(202,228,225,0.92),
+      0 0 30px rgba(202,228,225,0.34),
+      0 0 12px rgba(30,132,242,0.52),
+      0 0 21px rgba(30,132,242,0.92),
+      0 0 34px rgba(30,132,242,0.78),
+      0 0 54px rgba(30,132,242,0.92);
+    }
+    to {
+      text-shadow:
+      0 0 6px rgba(202,228,225,0.98),
+      0 0 30px rgba(202,228,225,0.42),
+      0 0 12px rgba(30,132,242,0.58),
+      0 0 22px rgba(30,132,242,0.84),
+      0 0 38px rgba(30,132,242,0.88),
+      0 0 60px rgba(30,132,242,1);
+    }
+  }
+  
+  
+  .text-area{
+      background-color: #393E46;
+      border-radius: 6px;
+      color: #3EDBF0;
+      font-size: large;
+  }
+  
+  .link {
+      position: absolute;
+      bottom: 10px; left: 10px;
+      color: #828282;
+      text-decoration: none;
+      
+      &:focus,
+      &:hover {
+      color: #c6e2ff;
+          text-shadow:
+      0 0 2px rgba(202,228,225,0.92),
+      0 0 10px rgba(202,228,225,0.34),
+      0 0 4px rgba(30,132,242,0.52),
+      0 0 7px rgba(30,132,242,0.92),
+      0 0 11px rgba(30,132,242,0.78),
+      0 0 16px rgba(30,132,242,0.92);
+      }
+  }
